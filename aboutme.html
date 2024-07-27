@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        :root {
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --link-color: #8ab4f8;
+            --header-bg: #1f1f1f;
+            --header-text: #e0e0e0;
+            --footer-bg: #1f1f1f;
+            --footer-text: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://unsplash.com/photos/5fNmWej4tAA/download?force=true&w=1920'); /* Example image URL */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: var(--link-color);
+        }
+
+        h1, h2 {
+            color: var(--header-text);
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: var(--link-color);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darken(var(--link-color), 10%);
+        }
+
+        #introduction, #background, #skills, #projects, #contact, #photos {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Hello! My name is Jagjot Singh, and I am the creator of this website. I am passionate about web development and enjoy creating user-friendly and visually appealing websites.</p>
+        </section>
+        
+        <section id="background">
+            <h2>Background</h2>
+            <p>I am a Computer Engineering Technician student at Northern College at Pures. Additionally, I have completed several web development courses, including [Course Name] and [Course Name], which have equipped me with the skills necessary to build modern web applications.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Proficient in HTML, CSS, and JavaScript</li>
+                <li>Experience with frameworks such as React and Angular</li>
+                <li>Knowledge of backend technologies like Node.js and Express</li>
+                <li>Familiar with database management using MySQL and MongoDB</li>
+                <li>Version control with Git and GitHub</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <ul>
+                <li><strong>Project 1:</strong> A responsive e-commerce website built with HTML, CSS, and JavaScript.</li>
+                <li><strong>Project 2:</strong> A dynamic web application using React and Node.js for a task management system.</li>
+                <li><strong>Project 3:</strong> A personal blog platform developed with Angular and Firebase.</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you would like to get in touch, please fill out the contact form below:</p>
+            <form action="mailto:singhjagjot691@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        
+        <section id="photos">
+            <h2>Photos</h2>
+            <img src="path/to/your/photo1.jpg" alt="Professional Headshot" class="photo">
+            <img src="path/to/your/photo2.jpg" alt="Candid Shot" class="photo">
+        </section>
+    </main>
+    <footer>
+        <p>Connect with me on <a href="https://github.com/jagga09" target="_blank">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
